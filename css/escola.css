@@ -1,11 +1,11 @@
 .main_cta {
-  background-image: url("../_img/escola.png");
+  background-image: url("../image/escola.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-position-x: 100%;
   background-position-y: 100%;
-  height: 45em;
+  height: 31.9em;
   width: 100%;
 }
 
