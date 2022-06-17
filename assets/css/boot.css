@@ -7,51 +7,64 @@
   font-family: archivo;
 }
 
-.overlay {
-  width: 100%;
-  background: rgba(2, 2, 1, 0.55);
+/*
+menu desktop
+*/
+
+.main_cta_fundo,
+.main_pages_cta_fundo {
+  flex-basis: 100%;
+  background: rgba(2, 2, 1, 0.5);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/*Header*/
-.main_header {
+.main_header,
+.main_pages_header {
   width: 100%;
 }
 
-.main_header:hover {
+.main_header:hover,
+.main_pages_header:hover {
   background-color: #020201;
+  height: fit-content;
 }
 
-.main_header_content {
+.main_header_content,
+.main_pages_header_content {
   max-width: 1170px;
   display: flex;
   margin: 0 auto;
 }
 
-.main_header_content .logo {
+.main_header_content .logo,
+.main_pages_header_content .logo {
   width: 128px;
   padding: 20px;
 }
 
-.main_header_content_menu {
+.main_header_content_menu,
+.main_pages_header_content_menu {
   flex-basis: calc(100% - 128px);
   display: flex;
   justify-content: flex-end;
 }
 
-.main_header_content_menu ul {
+.main_header_content_menu ul,
+.main_pages_header_content_menu ul {
   display: flex;
   align-items: center;
 }
 
-.main_header_content_menu ul li {
+.main_header_content_menu ul li,
+.main_pages_header_content_menu ul li {
   display: flex;
   justify-content: space-around;
 }
 
-.main_header_content_menu ul li a {
+.main_header_content_menu ul li a,
+.main_pages_header_content_menu ul li a {
   color: #ffffff;
   padding: 8px 10px;
   font-weight: 700;
@@ -59,15 +72,21 @@
   line-height: 16.69px;
 }
 
-.main_header_content_menu ul li a:hover {
+.main_header_content_menu ul li a:hover,
+.main_pages_header_content_menu ul li a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 
-.main_footer {
+.main_footer,
+.main_pages_footer {
+  display: flex;
   width: 100%;
-  flex-shrink: 0;
+}
+
+.main_pages_footer {
+  background-color: #020201;
 }
 
 .main_footer:hover {
@@ -112,11 +131,4 @@
 
 .main_footer_content_menu ul li a:hover {
   border-bottom: #ffffff 1px solid;
-}
-
-
-.main_footer_escola {
-  width: 100%;
-  flex-shrink: 0;
-  background-color: #020201;
 }
