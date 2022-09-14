@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
   box-sizing: border-box;
   font-size: 1em;
   text-decoration: none;
@@ -23,6 +26,11 @@ p {
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.581875em;
+}
+
+button {
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 /*

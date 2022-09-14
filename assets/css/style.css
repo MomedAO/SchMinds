@@ -203,7 +203,7 @@ School body
 }
 
 .main_school_contact_content header h1 {
-  padding: 1.25em;
+  padding: 1em;
 }
 
 .main_school_contact_content header p {
@@ -227,6 +227,52 @@ School body
 
 .main_school_contact_content_mensage {
   flex-basis: calc(100% - 50%);
+}
+
+.top,
+.medio,
+textarea {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.top input[type=text],
+.top input[type=email],
+.medio input[type=text],
+textarea {
+  color: #fff;
+  background-color: #020201;
+  flex-basis: calc(50% - 1.25em);
+  border-bottom: 0.125em solid #25251f;
+  margin-bottom: 1.25em;
+}
+
+.medio input[type=text] {
+  flex-basis: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.main_school_contact_content_mensage form div {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+
+.main_school_contact_content_mensage form div button[type=submit] {
+  color: #020201;
+  background-color: #fff;
+  padding: 0.825em 1.625em;
+  border-radius: 0.125em;
+  -moz-box-sizing: 0.625em;
+  -webkit-box-sizing: 0.625em;
+}
+
+.main_school_contact_content_mensage form div button[type=submit]:hover {
+  color: #25251f;
 }
 
 /*
