@@ -98,9 +98,9 @@ School body
 */
 .main_schooll_body_content header p {
   text-align: center;
-  max-width: 900px;
+  max-width: 56.25em;
   margin: 0 auto;
-  padding: 40px 0px;
+  padding: 2.5em 1.25em;
 }
 
 .main_schooll_body_content_article_visao,
@@ -108,7 +108,7 @@ School body
 .school_compromiss_content,
 .school_time_content,
 .main_school_contact_content {
-  padding: 80px 0;
+  padding: 2.5em 1.25em;
 }
 
 .main_schooll_body_content_article_visao header {
@@ -116,52 +116,52 @@ School body
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #020201;
   height: 25em;
   flex: 1 0 auto;
 }
 
 .main_schooll_body_content_article_visao_menu ul li {
   list-style: none;
-  padding: 20px;
+  padding: 1.25em;
 }
 
-.main_schooll_body_content_article_visao_menu ul li h2,
-.schooll_responsabilite_content_social header h2,
-.school_compromiss_content_right header h2 {
+.main_schooll_body_content_article_visao_menu ul li h2 {
   color: #ffffff;
   text-align: center;
-  padding: 0 40px;
 }
 
 .main_schooll_body_content_article_visao article {
-  flex-basis: calc(100% - 500px);
+  flex-basis: calc(100% - 31.25em);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.schooll_responsabilite_content_social p {
+  flex-basis: 100%;
+  padding: 0 2.5em 0 0;
+}
+
 .main_schooll_body_content_article_visao article p,
-.schooll_responsabilite_content_social p,
-.schooll_responsabilite_content_social p,
 .school_compromiss_content_right p {
   flex-basis: 100%;
-  padding: 0 40px;
+  padding: 0 0 0 2.5em;
 }
 
-.schooll_responsabilite_content_social header h2,
+.schooll_responsabilite_content_social header h2 {
+  padding: 0 1.25em 0.625em 0;
+  text-align: center;
+}
+
 .school_compromiss_content_right header h2 {
-  color: #000;
-  padding: 0 0 20px 0;
-}
-
-.schooll_responsabilite_content_img {
-  padding: 0 0 0 20px;
+  text-align: center;
+  padding: 0 0 0.625em 1.25em;
 }
 
 .school_time_content {
-  padding: 0;
-  display: grid;
+  padding: 2.5em 1.25em;
+  flex-wrap: wrap;
 }
 
 .school_time_content header {
@@ -175,9 +175,17 @@ School body
 }
 
 .school_time_content_time article {
-  margin-top: 80px;
+  flex-basis: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.25em 0;
 }
 
+.school_time_content_time article img {
+  margin-bottom: 1.25em;
+  max-width: calc(100% - 0.5em);
+}
 
 .main_school_contact {
   background-color: #020201;
@@ -190,18 +198,19 @@ School body
 
 .main_school_contact_content header {
   flex-basis: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 2.5em;
+  text-align: center;
 }
 
 .main_school_contact_content header h1 {
-  text-align: center;
-  padding-bottom: 40px;
+  padding: 1.25em;
 }
 
 .main_school_contact_content header p {
   text-align: center;
   font-weight: 500;
   font-size: 1.2em;
+  padding: 1.25em 0;
 }
 
 .main_school_contact_content_localization {
@@ -209,11 +218,11 @@ School body
 }
 
 .main_school_contact_content_localization ul li {
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .main_school_contact_content_localization ul p {
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .main_school_contact_content_mensage {
@@ -229,19 +238,20 @@ portifolio body
 
 .main_portifolio_body_content,
 .main_schooll_body_content {
-  display: grid;
-  padding: 80px 0;
+  flex-wrap: wrap;
+  padding: 5em 0;
 }
 
-.main_portifolio_body_content h1,
-.main_schooll_body_content h1 {
+.main_portifolio_body_content header,
+.main_schooll_body_content header {
   text-align: center;
+  margin: 0 auto;
 }
 
 .main_portifolio_body_content_projecto {
   display: flex;
   flex-basis: 100%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 
 .arquiteture_left,
@@ -285,7 +295,7 @@ portifolio body
 .designInteiro_left h2,
 .avaliacaoImobiliaria_left h2 {
   color: #ffffff;
-  padding: 0 40px;
+  padding: 0 2.5em;
 }
 
 .arquiteture_right,
@@ -300,7 +310,7 @@ portifolio body
 .urbanismo_right p,
 .designInteiro_right p,
 .avaliacaoImobiliaria_right p {
-  padding: 0 40px;
+  padding: 0 2.5em;
   text-align: left;
 }
 
@@ -317,7 +327,7 @@ portifolio body
 .paisagismo_left p,
 .designIndutrial_left p,
 .fiscalizacaoProjecto_left p {
-  padding: 0 40px;
+  padding: 0 2.5em;
   text-align: left;
 }
 
@@ -356,5 +366,7 @@ portifolio body
 .fiscalizacaoProjecto_right h2 {
   max-width: 18em;
   color: #ffffff;
-  padding: 0 40px;
+  padding: 0 2.5em;
 }
+
+@media (max-width:64em) {}
