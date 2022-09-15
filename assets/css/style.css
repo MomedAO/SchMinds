@@ -283,9 +283,14 @@ portifolio body
 }
 
 .main_portifolio_body_content,
-.main_schooll_body_content {
+.main_schooll_body_content,
+.main_body_content {
   flex-wrap: wrap;
   padding: 5em 0;
+}
+
+.main_body_content {
+  padding: 0.625em 0;
 }
 
 .main_portifolio_body_content header,
@@ -413,6 +418,89 @@ portifolio body
   max-width: 18em;
   color: #ffffff;
   padding: 0 2.5em;
+}
+
+.main_project_header {
+  margin: 0 auto;
+}
+
+.main_project_content {
+  flex-basis: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fundo_interior,
+.fundo_arquitectura,
+.fundo_paisagismo,
+.fundo_urbanismo,
+.fundo_industrial,
+.fundo_avaliacao {
+  width: 23.5em;
+  height: 16.875em;
+  margin: 1.25em 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.fundo_interior {
+  background-image: url(../image/designDeInterior2.jpg);
+}
+
+.fundo_arquitectura {
+  background-image: url(../image/Arquiteture.jpeg);
+}
+
+.fundo_paisagismo {
+  background-image: url(../image/paisagismo.jpeg);
+}
+
+.fundo_urbanismo {
+  background-image: url(../image/urbanismo2.jpg);
+}
+
+.fundo_industrial {
+  background-image: url(../image/designIndustrial2.jpg);
+}
+
+.fundo_avaliacao {
+  background-image: url(../image/avaliacaoImobiliaria2.jpg);
+}
+
+.designInterior {
+  display: flex;
+  width: 23.5em;
+  height: 16.875em;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 1.625em 2.5em;
+}
+
+.designInterior h1 {
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.0625;
+  letter-spacing: 0em;
+}
+
+.designInterior h2 {
+  font-size: 1.5625em;
+  font-weight: 400;
+  line-height: 2.1875em;
+}
+
+.designInterior a {
+  color: #fff;
+  padding-top: 0.125em;
+  flex-basis: 100%;
+}
+
+.designInterior:hover {
+  background-color: #0f3260bf;
 }
 
 @media (max-width:64em) {}

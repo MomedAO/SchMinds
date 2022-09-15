@@ -33,6 +33,16 @@ button {
   font-weight: 600;
 }
 
+.select {
+  border-bottom: #020201 1px solid;
+  text-decoration: none !important;
+}
+
+.select1 {
+  border-bottom: #fff 1px solid;
+  text-decoration: none !important;
+}
+
 /*
 menu desktop
 */
@@ -47,7 +57,8 @@ menu desktop
 }
 
 .main_header,
-.main_pages_header {
+.main_pages_header,
+.project_header {
   width: 100%;
 }
 
@@ -66,6 +77,10 @@ menu desktop
 .main_school_contact_content,
 .main_schooll_body_content_article_visao,
 .main_school_contact_content,
+.main_project_header_content,
+.main_project_header_content,
+.main_project_content,
+.main_body_content,
 .schooll_responsabilite_content,
 .school_compromiss_content,
 .school_time_content {
@@ -75,32 +90,40 @@ menu desktop
 }
 
 .main_header_content .logo,
-.main_pages_header_content .logo {
+.main_pages_header_content .logo,
+.main_project_header_content .logo {
   width: 8em;
   padding: 1.25em;
 }
 
 .main_header_content_menu,
-.main_pages_header_content_menu {
+.main_pages_header_content_menu,
+.main_project_header_content_menu {
   flex-basis: calc(100% - 8em);
   display: flex;
   justify-content: flex-end;
 }
 
 .main_header_content_menu ul,
-.main_pages_header_content_menu ul {
+.main_pages_header_content_menu ul,
+.main_project_header_content_menu ul,
+.main_project_header ul {
   display: flex;
   align-items: center;
 }
 
 .main_header_content_menu ul li,
-.main_pages_header_content_menu ul li {
+.main_pages_header_content_menu ul li,
+.main_project_header_content_menu ul li,
+.main_project_header ul li {
   display: flex;
   justify-content: space-around;
 }
 
 .main_header_content_menu ul li a,
-.main_pages_header_content_menu ul li a {
+.main_pages_header_content_menu ul li a,
+.main_project_header_content_menu ul li a,
+.main_project_header ul li a {
   color: #ffffff;
   padding: 0.5em 0.625em;
   font-weight: 700;
@@ -108,8 +131,16 @@ menu desktop
   line-height: 16.69px;
 }
 
+.main_project_header_content_menu ul li a,
+.main_project_header ul li a {
+  color: #020201;
+}
+
 .main_header_content_menu ul li a:hover,
-.main_pages_header_content_menu ul li a:hover {
+.main_pages_header_content_menu ul li a:hover,
+.main_project_header_content_menu ul li a:hover,
+.main_project_header_content_menu ul li a:hover,
+.main_project_header ul li a:hover {
   text-decoration: underline;
 }
 
