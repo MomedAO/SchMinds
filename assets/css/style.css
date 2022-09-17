@@ -508,7 +508,7 @@ portifolio body
   .main_body_content section {
     max-width: 73.125em;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
   }
 
   .main_body_content section .left {
@@ -546,10 +546,6 @@ portifolio body
 
   .main_header_content_menu_mobile {
     display: flex !important;
-  }
-
-  .main_body_content section {
-    align-content: center;
   }
 
   .main_body_content section .left h1 {
