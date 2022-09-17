@@ -43,7 +43,7 @@
 }
 
 .main_body_content section .left {
-  flex-basis: 400px;
+  flex-basis: 25em;
   padding: 20px;
   display: flex;
   align-self: flex-end;
@@ -54,24 +54,24 @@
   flex-basis: 100%;
   font-weight: 700;
   font-size: 1.75em;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .main_body_content section .left p {
   font-weight: 400;
   font-size: 1.125em;
   text-align: justify;
-  line-height: 25.31px;
+  line-height: 1.581875em;
   flex-basis: 100%;
 }
 
 .main_body_content section .right {
-  max-width: 1170px;
+  max-width: 73.125em;
   display: flex;
-  flex-basis: calc(100% - 400px);
+  flex-basis: calc(100% - 25em);
   justify-content: flex-end;
   align-self: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 
 .main_body_content section .right h1 {
@@ -85,7 +85,7 @@
 
 .main_body_content section .right span {
   font-size: 2em;
-  padding: 0 10px;
+  padding: 0 0.625em;
   color: #00ed96;
 }
 
@@ -267,8 +267,8 @@ textarea {
   background-color: #fff;
   padding: 0.825em 1.625em;
   border-radius: 0.125em;
-  -moz-box-sizing: 0.625em;
-  -webkit-box-sizing: 0.625em;
+  -moz-border-sizing: 0.625em;
+  -webkit-border-sizing: 0.625em;
 }
 
 .main_school_contact_content_mensage form div button[type=submit]:hover {
@@ -503,4 +503,65 @@ portifolio body
   background-color: #0f3260bf;
 }
 
-@media (max-width:64em) {}
+@media (max-width:38em) {
+
+  .main_body_content section {
+    max-width: 73.125em;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .main_body_content section .left {
+    flex-basis: 100%;
+  }
+
+  .main_body_content section .left p {
+    font-weight: 300;
+  }
+
+  .main_body_content section .right {
+    flex-basis: 100%;
+    padding-bottom: 0;
+  }
+
+  .main_body_content section .right h1 {
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0 0.625em;
+    align-content: center;
+  }
+
+  .main_body_content section .right span {
+    font-size: 1.625em;
+    padding: 0 0.625em;
+    color: #00ed96;
+  }
+
+}
+
+@media (max-width: 27.25em) {
+  .main_header_content_menu {
+    display: none !important;
+  }
+
+  .main_header_content_menu_mobile {
+    display: flex !important;
+  }
+
+  .main_body_content section {
+    align-content: center;
+  }
+
+  .main_body_content section .left h1 {
+    font-size: 1.3em;
+  }
+
+  .main_body_content section .left p {
+    font-size: 1em;
+  }
+
+  .main_body_content section .right {
+    align-content: flex-end;
+    justify-content: flex-end;
+  }
+}
